@@ -40,7 +40,7 @@ module.exports = {
         const userRole = interaction.member.roles.cache.find(
           (role) => role.id === userAllowedRoles[0]
         );
-        console.log(userRole.id);
+
         try {
           const timbraturaResponse = await fetch(apiUri + "/timbratrice", {
             method: "POST",
